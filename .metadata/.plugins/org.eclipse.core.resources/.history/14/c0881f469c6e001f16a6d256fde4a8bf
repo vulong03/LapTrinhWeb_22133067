@@ -1,0 +1,7 @@
+package Tuan2.services.impl;
+
+import Tuan_3.services.IUserService;
+
+public class UserServiceimpl implements IUserServices {
+
+}

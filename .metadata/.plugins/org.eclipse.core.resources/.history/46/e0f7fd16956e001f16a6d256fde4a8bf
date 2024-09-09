@@ -1,0 +1,64 @@
+package Tuan2.DAO.impl;
+
+import java.security.PublicKey;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.naming.spi.DirStateFactory.Result;
+
+import org.eclipse.tags.shaded.org.apache.bcel.verifier.exc.StaticCodeConstraintException;
+
+import Tuan2.DAO.IUserDao;
+import Tuan2.config.SQLServerConnection;
+import Tuan2.models.userModels;
+public class UserDaoimpl extends SQLServerConnection implements IUserDao {
+
+	public Connection conn = null;
+	public PreparedStatement ps = null;
+	public ResultSet rs = null;
+	public List<userModels> findAll() {
+
+		String sql = "select* from Username";
+		
+		List<userModels> list = new ArrayList<>();
+		
+		try {
+			conn = super.getConnection();
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+
+			while (rs.next()) {
+				list.add(new userModels(rs.getInt("id"),rs.getString("email"),rs.getString("username"),rs.getString("fullname")
+						,rs.getString("passWord"),rs.getString("avatar"),rs.getInt("roleid"), rs.getString("phone"),
+						rs.getDate("createdDate")));
+			}
+			return list;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	public userModels findById(int id) {
+		return null;
+	}
+
+	@Override
+	public void insert(userModels user) {
+
+	}
+public static void main(String [] args) {
+	UserDaoimpl userDao = new UserDaoimpl();
+	
+	List<userModels> list = userDao.findAll();
+	for(userModels user : list)
+	{
+		System.out.println(user);
+	}
+	}
+
+}

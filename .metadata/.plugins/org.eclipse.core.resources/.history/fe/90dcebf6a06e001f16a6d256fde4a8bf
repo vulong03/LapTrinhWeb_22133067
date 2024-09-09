@@ -1,0 +1,57 @@
+package Tuan2.services.impl;
+
+import Tuan2.models.userModels;
+import Tuan2.services.IUserServiecsimpl;
+
+import Tuan2.DAO.*;
+import Tuan2.DAO.impl.UserDaoimpl;
+public class UserServivesimpl implements IUserServiecsimpl {
+	IUserDao userDao = new UserDaoimpl();
+	@Override
+	public userModels login(String username, String password) {
+		
+		userModels user = userDao.findByUserName(username);
+		if (user != null && password.equals(user.getPassWord())) {
+		return user;
+		}
+		return null;
+		
+	}
+
+	@Override
+	public userModels get(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insert(userModels user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean register(String email, String password, String username, String fullname, String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistEmail(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistUsername(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistPhone(String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

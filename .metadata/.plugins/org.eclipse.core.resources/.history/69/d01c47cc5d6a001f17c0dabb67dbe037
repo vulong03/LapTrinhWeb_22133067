@@ -1,0 +1,5 @@
+package Tuan2.config;
+
+public class SQLSeverConnection {
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
+    <wb-module deploy-name="Hello_World-0.0.1-SNAPSHOT">
+=======
+    <wb-module deploy-name="LapTrinhWeb_tuan2-0.0.1-SNAPSHOT">
+>>>>>>> ae03c8f (bai2dangnhapvadangky)
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
+<<<<<<< HEAD
+        <property name="context-root" value="Hello_World"/>
+        <property name="java-output-path" value="/Hello_World/target/classes"/>
+=======
+        <property name="context-root" value="LapTrinhWeb_tuan2"/>
+        <property name="java-output-path" value="/LapTrinhWeb_tuan2/target/classes"/>
+>>>>>>> ae03c8f (bai2dangnhapvadangky)
+    </wb-module>
+</project-modules>

@@ -1,0 +1,8 @@
+package Tuan2.models;
+
+import java.io.Serializable;
+
+public class userModels implements Serializable{
+
+	
+}

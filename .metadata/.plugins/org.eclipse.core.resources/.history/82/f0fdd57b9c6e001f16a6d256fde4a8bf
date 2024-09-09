@@ -1,0 +1,5 @@
+package Tuan2.services;
+
+public interface IUserServiecsimpl {
+
+}

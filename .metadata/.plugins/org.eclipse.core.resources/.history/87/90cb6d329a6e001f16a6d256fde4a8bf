@@ -1,0 +1,16 @@
+package Tuan2.DAO;
+
+import java.util.List;
+
+import Tuan2.models.userModels;
+
+public interface IUserDao {
+ 
+	List<userModels> findAll();
+	
+	userModels findById(int id);
+	
+	void insert(userModels user);
+	
+	
+}

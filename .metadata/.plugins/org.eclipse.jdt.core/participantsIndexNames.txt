@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\ASUS\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2024588387.index
+\Login_Register\src\main\java
+C:\Users\ASUS\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1381791904.index
+\LapTrinhWeb_tuan2\src\main\java
